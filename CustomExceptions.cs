@@ -1,10 +1,24 @@
 ﻿using System;
 
-public class Class1
+public class InvalidDataException : Exception
 {
-	public Class1()
-	{
-				//testing
-				//gwen coding
-	}
+	public InvalidDataException() { }
+
+    public InvalidDataException(string message) : base(message) { }
 }
+
+public class OverCapacityException : Exception
+{
+    public OverCapacityException() { }
+
+    public OverCapacityException(string message) : base(message) { }
+}
+
+
+public class EmptyStructureException : Exception
+{
+    public EmptyStructureException() { }
+
+    public EmptyStructureException(string message) : base(message) { }
+}
+
